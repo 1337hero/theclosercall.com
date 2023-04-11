@@ -1,8 +1,9 @@
 @use "sass:map";
 
 @import "variables";
-@import "mixins";
-@import "fonts";
+
+@import "bulma";
+
 @import "page";
-@import "blocks";
-@import "social-icons";
+
+

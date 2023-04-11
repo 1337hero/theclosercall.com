@@ -1,26 +1,39 @@
-/* FONTS */
-$default: sans-serif;
-$main-font: 'Open Sans', sans-serif;
+// COLORS
+$primary: #c8943b;
+$info: #209CEE;
+$success: #23D160;
+$warning: #FFDD57;
+$danger: #FF3860;
+$light: #F5F5F5;
+$dark: #222;
 
+// TEXT
+$text: #4A4A4A;
+$link: #3273DC;
+$body-family: 'Open Sans', sans-serif;
+$title-family: 'Montserrat', sans-serif;
+$button-family: false;
 
-/* FONT SIZES */
-$default-size: 18px;
-$h1-size: 5rem;
-$h2-size: 1rem;
-$h3-size: .95rem;
-$body-size: 0.9rem;
+// BREAKPOINTS
+$gap: 32px;
+$tablet: 768px;
+$desktop: 960px + (2*$gap);
+$widescreen: 1152px + (2*$gap);
+$fullhd: 1344px + (2*$gap);
+$widescreen-enabled: true;
+$fullhd-enabled: false;
 
+// LAYOUT
+$section-padding: 3rem 1.5rem;
+$section-padding-medium: 6rem 1.5rem;
+$section-padding-large: 9rem 1.5rem;
 
-/* FONT COLORS */
-$titles: #03213f;
-$text: #0F0E0E;
-$links: #0F0E0E;
-$hover: #0F0E0E;
-
-
-/* PAGE COLORS */
-$body: #f9f9f9;
-$highlight: #0077B5;
+// SPACING HELPERS (.mt-3, .mx-auto, .p-5, etc)
+$spacing-shortcuts: ("margin": "m", "padding": "p");
+$spacing-directions: ("top": "t", "right": "r", "bottom": "b", "left": "l");
+$spacing-horizontal: "x";
+$spacing-vertical: "y";
+$spacing-values: ("0": 0, "1": 0.25rem, "2": 0.5rem, "3": 1rem, "4": 1.5rem, "5": 3rem, "auto": auto);
 
 
 /* THEME COLORS */
@@ -36,23 +49,3 @@ $theme-colors: (
     "twitter":   #1da1f2
 );
 
-
-/* Brand Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.button {
-    .--coffee {
-        color: #100a26;
-        background-color: #ffdd00; 
-
-    }
-}
-
-// .button.button-coffee {
-//   color: #100a26;
-//   background-color: #ffdd00;
-// }
-// .button.button-coffee:hover,
-// .button.button-coffee:focus {
-//   filter: brightness(90%);
-// }

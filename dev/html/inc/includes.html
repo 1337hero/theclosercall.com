@@ -1,0 +1,47 @@
+<script type="text/javascript">
+    if (document.querySelectorAll(".scroll").length > 0) {
+        // basic page scroll
+        document.querySelectorAll(".scroll").forEach(function (element) {
+            element.addEventListener("click", function (event) {
+                document.querySelectorAll("a.scroll").forEach(function (scrollElement) {
+                    scrollElement.classList.add("hidden");
+                });
+
+                event.preventDefault();
+                var full_url = this.href;
+                var parts = full_url.split("#");
+                var trgt = parts[1];
+                var target_offset = document.getElementById(trgt).getBoundingClientRect();
+                var target_top = target_offset.top + window.pageYOffset;
+                var offset = 105; // Replace the 0 with any measure to offset the top scroll
+
+                // Animate
+                var start = null;
+                var duration = 1000; // Duration of the animation in ms
+
+                function step(timestamp) {
+                    if (!start) start = timestamp;
+                    var progress = timestamp - start;
+                    var currentScrollTop = window.pageYOffset;
+                    var scrollDifference = target_top - currentScrollTop - offset;
+                    var easeInOutQuad = function (t) {
+                        return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+                    };
+                    var scrollTop = currentScrollTop + scrollDifference * easeInOutQuad(progress / duration);
+
+                    window.scrollTo(0, scrollTop);
+
+                    if (progress < duration) {
+                        window.requestAnimationFrame(step);
+                    }
+                }
+
+                window.requestAnimationFrame(step);
+            });
+        });
+    }
+
+</script>
+<script>
+  AOS.init();
+</script>
