@@ -2,8 +2,8 @@
     <div class="container">
 
         <header class="SectionHeader has-text-centered extra-margin" data-aos="fade-up">
-            <h1 class="title has-text-weight-bold is-3 is-spaced">Become a Member</h1>
-            <p class="SectionHeader__subtitle subtitle">Members enjoy exclusive benefits and access. Choose the membership level that’s right for you.</p>
+            <h3 class="title has-text-weight-bold is-3 is-spaced">{{ pricingTitle }}</h3>
+            <p class="SectionHeader__subtitle subtitle">{{ pricingParagraph }}</p>
         </header>
 
         <div class="columns is-centered is-comparative is-desktop">
@@ -11,10 +11,10 @@
                 <div class="PricingSection__card card">
                     <div class="PricingSection__card-content card-content">
                         <div class="PricingSection__name has-text-weight-bold">
-                            Silver
+                            {{ boxOneTier }}
                         </div>
                         <div class="PricingSection__price has-text-weight-bold is-size-1">
-                            <span class="PricingSection__period is-size-3 7">150/mo</span>
+                            <span class="PricingSection__period is-size-3 7">{{ boxOnePrice }}/mo</span>
                         </div>
                         <div class="Pricing__description">
                             <p>Jump into weekly calls where you will be able to be a part of amazing conversations that will level up your closing skills!</p>
@@ -27,7 +27,7 @@
                             <li><i class="fas fa-check has-text-primary"></i>Participate in Live Call Feedback Conversations (Personal Calls are Not Reviewed on This Plan)</li>
                             <li><i class="fas fa-check has-text-primary"></i>Overcome Yourself - Where We Discuss How to Win the Battles that we Encounter in our Businesses and our Conversations</li>
                             <li><i class="fas fa-check has-text-primary"></i>Get Reps In Where You Will Challenge One Another in Live Role Plays To Further Sharpen Your Skills</li>
-                        </ul><a class="PricingSection__button button is-medium is-primary" href="https://sales.theclosercall.com/entry-package" target="_self">Choose</a>
+                        </ul><a class="PricingSection__button button is-medium is-primary" href="{{ boxOneLink }}" target="_self">Choose</a>
                     </div>
                 </div>
             </div>
@@ -37,10 +37,10 @@
                 <div class="PricingSection__card card">
                     <div class="PricingSection__card-content card-content">
                         <div class="PricingSection__name has-text-weight-bold">
-                            Gold
+                            {{ boxTwoTier }}
                         </div>
                         <div class="PricingSection__price has-text-weight-bold is-size-1">
-                            <span class="PricingSection__period is-size-3 7">250/mo</span>
+                            <span class="PricingSection__period is-size-3 7">{{ boxTwoPrice }}/mo</span>
                         </div>
                         <div class="Pricing__description">
                             <p>Includes Everything in the Silver Package, Plus:</p>
@@ -52,7 +52,7 @@
                             <li><i class="fas fa-check has-text-primary"></i>Double The Calls! Plus you'll get access to any Bonus Calls that take place throughout the Month</li>
                             <li><i class="fas fa-check has-text-primary"></i>Get YOUR calls reviewed! - Struggling with a call? Not sure why it didn't close? Did they promise you they'd sign and now your can't get a hold of them? This is what we break down during our call reviews! Calls that get Reviewed are Submitted by our Gold Members and Above. Direct Feedback to Improve Your Conversations. (*Call Feedback is done based on the order they're received and will be based on volume.)</li>
 
-                        </ul><a class="PricingSection__button button is-medium is-primary" href="https://sales.theclosercall.com/premium-package" target="_self">Choose</a>
+                        </ul><a class="PricingSection__button button is-medium is-primary" href="{{ boxTwoLink }}" target="_self">Choose</a>
                     </div>
                 </div>
             </div>
@@ -62,10 +62,10 @@
                 <div class="PricingSection__card card">
                     <div class="PricingSection__card-content card-content">
                         <div class="PricingSection__name has-text-weight-bold">
-                            One on One
+                            {{ boxThreeTier }}
                         </div>
                         <div class="PricingSection__price has-text-weight-bold is-size-1">
-                            <span class="PricingSection__period is-size-3 7">Varies</span>
+                            <span class="PricingSection__period is-size-3 7">{{ boxThreePrice }}</span>
                         </div>
                         <div class="Pricing__description">
                             <p>Jump into weekly calls where you will be able to be a part of amazing conversations that will level up your closing skills!</p>
@@ -77,7 +77,7 @@
                             <li><i class="fas fa-check has-text-primary"></i>Lorem ipsum dolor sit amet</li>
                             <li><i class="fas fa-check has-text-primary"></i>Consectetur adipiscing elit</li>
                             <li><i class="fas fa-check has-text-primary"></i>Integer molestie lorem at massa</li>
-                        </ul><a class="PricingSection__button button is-medium is-primary" href="https://bit.ly/OneonOnewithDQ" target="_blank">Choose</a>
+                        </ul><a class="PricingSection__button button is-medium is-primary" href="{{ boxThreeLink }}" target="_blank">Choose</a>
                     </div>
                 </div>
             </div>
