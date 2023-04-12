@@ -12,8 +12,8 @@ module.exports = {
     /*-- Video Section --*/
     "videoTitle": "Ready to close more deals?",
     "videoParagraph": "Jump into weekly calls where you will be able to be a part of amazing conversations that will level up your closing skills!",
-    "mp4source": "https://s3.amazonaws.com/media.mikekey.com/DQ.webm",
-    "webmsource": "https://s3.amazonaws.com/media.mikekey.com/DQ.mp4",
+    "mp4source": "https://d3ey9jrxflgk5o.cloudfront.net/TheCloserCall-Intro.mp4",
+    "webmsource": "https://d3ey9jrxflgk5o.cloudfront.net/TheCloserCall-Intro.webm",
 
     /*-- Pricing --*/
     "pricingTitle": "Become a Member",
@@ -39,7 +39,11 @@ module.exports = {
     "facebook": "https://www.facebook.com/Daniel.TheQOfficial",
     "tiktok": "https://www.tiktok.com/@daniel.theq",
 
-
- 
+    /*-- Nav Items --*/
+    "navAbout": "#about",
+    "navPrice": "#pricing",
+    "navFAQ": "/faq.html",
+    "navTerms": "/terms.html",
+    "navPrivacy": "/privacy.html",
 
 }
